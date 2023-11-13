@@ -1,3 +1,105 @@
 @import "src/css/reset.css";
 @import "src/css/variables.css";
 @import "src/css/base.css";
+@import "src/css/components.css";
+
+/* Features section */
+
+.features-container {
+  --icon-size: 56px;
+  padding-top: 5rem;
+  padding-inline: var(--page-padding-inline);
+  position: relative;
+}
+
+.line {
+  visibility: hidden;
+  --line-width: 16px;
+  width: var(--line-width);
+  height: 80%;
+  position: absolute;
+  z-index: -1;
+  left: calc(var(--page-padding-inline) - var(--line-width) + var(--icon-size));
+  top: 0;
+  background-color: var(--color-neutral-400);
+  opacity: 0.4;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  text-align: center;
+}
+.feature {
+  display: grid;
+  row-gap: 1.5rem;
+  justify-items: center;
+}
+.feature-icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+.feature-heading {
+  font-size: 1.25rem;
+  letter-spacing: -0.89px;
+}
+
+@media (min-width: 48em) {
+  .line {
+    visibility: visible;
+  }
+  .features {
+    --icon-size: 96px;
+    text-align: start;
+  }
+  .feature {
+    grid-template-columns: var(--icon-size) 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 5rem;
+    justify-items: start;
+  }
+  .feature-heading {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .feature-body {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .feature-icon {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+@media (min-width: 80em) {
+  .features-container {
+    --padding-top: 10rem;
+    padding-top: var(--padding-top);
+  }
+  .line {
+    height: var(--line-width);
+    width: 65%;
+    left: 0;
+    top: calc(var(--padding-top) - var(--line-width) + var(--icon-size));
+  }
+  .features {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .feature {
+    grid-template-columns: 100%;
+    grid-template-rows: var(--icon-size) auto auto;
+    row-gap: 1.75rem;
+    column-gap: 0;
+  }
+
+  .feature-heading {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .feature-body {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
