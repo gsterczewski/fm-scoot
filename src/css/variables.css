@@ -20,6 +20,7 @@
 
   --ff-body: var(--ff-primary);
   --ff-headings: var(--ff-accent);
+  --ff-links: var(--ff-accent);
 
   --fs-400: 1rem;
   --fs-500: 1.25rem;
