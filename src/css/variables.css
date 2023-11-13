@@ -1,12 +1,12 @@
 :root {
   /* COLORS */
-  --color-primary: hsl(40, 97, 58);
-  --color-primary-light: hsl(39, 100, 94);
+  --color-primary: hsl(40, 97%, 58%);
+  --color-primary-light: hsl(39, 100%, 94%);
   --color-neutral-100: #fff;
-  --color-neutral-200: hsl(214, 37, 96);
-  --color-neutral-300: hsl(212, 41, 93);
-  --color-neutral-400: hsl(217, 12, 62);
-  --color-neutral-800: hsl(216, 17, 35);
+  --color-neutral-200: hsl(214, 37%, 96%);
+  --color-neutral-300: hsl(212, 41%, 93%);
+  --color-neutral-400: hsl(217, 12%, 62%);
+  --color-neutral-800: hsl(216, 17%, 35%);
 
   --text-color: var(--color-neutral-400);
   --heading-color: var(--color-neutral-800);
