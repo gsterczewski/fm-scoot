@@ -16,7 +16,9 @@ a:hover,
 a:focus {
   color: var(--color-primary);
 }
-
+p {
+  max-width: 60ch;
+}
 /* HEADINGS */
 
 .heading {
