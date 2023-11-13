@@ -103,3 +103,63 @@
     grid-row: 3;
   }
 }
+
+/* Download section */
+
+.download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+  background-color: var(--color-neutral-800);
+  padding-inline: var(--page-padding-inline);
+  padding-block: 5.5rem;
+}
+.download-heading {
+  text-align: center;
+  color: var(--color-neutral-100);
+  max-width: 415px;
+}
+.download-buttons {
+  display: flex;
+  column-gap: 0.875rem;
+  justify-content: center;
+}
+.download-button {
+  height: 2.5rem;
+}
+.download-button > img {
+  height: 100%;
+}
+.semi-circles {
+  position: absolute;
+  transform: scale(3);
+  bottom: 15%;
+  right: 55%;
+}
+@media (min-width: 48em) {
+  .download {
+    padding-block: 3rem;
+  }
+  .semi-circles {
+    transform: scale(1.5);
+    bottom: 0;
+    left: -5%;
+  }
+}
+@media (min-width: 80em) {
+  .download {
+    padding-block: 6.375rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .download-heading {
+    text-align: start;
+  }
+  .semi-circles {
+    transform: scale(1);
+    left: 34%;
+    bottom: 0;
+  }
+}
