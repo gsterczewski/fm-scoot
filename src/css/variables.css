@@ -7,6 +7,7 @@
   --color-neutral-300: hsl(212, 41%, 93%);
   --color-neutral-400: hsl(217, 12%, 62%);
   --color-neutral-800: hsl(216, 17%, 35%);
+  --color-neutral-900: hsl(214, 15%, 23%);
 
   --text-color: var(--color-neutral-400);
   --heading-color: var(--color-neutral-800);
